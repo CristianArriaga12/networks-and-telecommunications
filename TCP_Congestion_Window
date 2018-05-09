@@ -1,0 +1,6 @@
+load tcpplot2.dat
+plot(tcpplot, '--r', 'LineWidth', 3)
+grid on
+xlabel('Vuelta de transmición')
+ylabel('cwmd [segmentos]')
+title('Ventana de congestion de TCP')
