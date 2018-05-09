@@ -1,0 +1,6 @@
+load talkspurt.dat
+stem(talkspurt(:,1) , talkspurt(:,2))
+xlabel('Tiempo de sesion[s]')
+ylabel('Retardo de extremo a extremo[s]')
+title('Retardo de extremo a extremo de paquetes de voz sobre Iternet(VoIP)')
+print -dpng "traza2a.png"
