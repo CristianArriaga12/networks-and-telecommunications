@@ -1,0 +1,7 @@
+load hop03.txt
+plot(hop03)
+axis([0 5000 0 8])
+xlabel('Número de vuelta')
+ylabel('Retardo de ida y vuelta')
+title('Tiempo de ida y vuelta[s]')
+print -dpng "traza3a.png"
