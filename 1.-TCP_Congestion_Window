@@ -4,3 +4,4 @@ grid on
 xlabel('Vuelta de transmición')
 ylabel('cwmd [segmentos]')
 title('Ventana de congestion de TCP')
+print -dpng "traza1a.png"
