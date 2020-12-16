@@ -1,0 +1,50 @@
+Ejercicio 1 
+a)
+	octave:1> load tcpplot2.dat 
+	octave:2> plot(tcpplot2, '--r', 'LineWidth',3)
+	octave:3> grid on
+	octave:4> xlabel('Vuelta de transmisión')
+	octave:5> ylabel('cwnd [segmentos]')
+	octave:6> title('Ventana de congestión de TCP')
+	octave:7> print -dpng "traza1a.png"
+b)
+	octave:1> load tcpplot2.dat 
+	octave:2> plot(tcpplot2,'-. p','LineWidth',1,'MarkerFaceColor', 'b')
+	octave:3> grid on
+	octave:4> xlabel('Vuelta de transmisión')
+	octave:5> ylabel('cwnd [Segmentos]')
+	octave:6> title('Ventana de congestión de TCP')
+	octave:7> print -dpng "traza1b.png"	
+c) 
+	octave:1> load tcpplot2.dat 
+	octave:2> plot(tcpplot2,'s','LineWidth', 2)
+	octave:3> grid on
+	octave:4> xlabel('Ventana de tranmisión')
+	octave:5> ylabel('cwnd [Segmentos]')
+	octave:6> title('Ventana de congestión de TCP')
+	octave:7> print -dpng "traza1c.png"
+
+2.-
+a)
+	octave:1> load talkspurt.dat 
+	octave:2> stem(talkspurt(:,1), talkspurt(:,2))
+	octave:3> xlabel('Tiempo de sesión[s]')
+	octave:4> ylabel('Retardo de extremo a extremo [s]')
+	octave:5> title('Retardo de extremo a extremo de paquetes de voz sobre Internet (VoIP)')
+	octave:6> print -dpng traza2a.png
+
+b)
+	octave:1> load talkspurt.dat
+	octave:2> plot(talkspurt(:,1), talkspurt(:,2), '-b', 'LineWidth',2)
+	octave:3> xlabel('Tiempo de sesión[s]')
+	octave:4> ylabel('Retardo de extremo a extremo [s]')
+	octave:5> title('Retardo de extremo a extremo de paquetes de voz sobre Internet (VoIP)')
+	octave:6> print -dpng traza2b.png
+3.-
+a)	octave:1> load hop03.txt 
+	octave:2> plot(hop03, '- b', 'LineWidth', 1.5)
+	octave:3> axis([0 5000 0 8])
+	octave:4> xlabel('Número de vuelta')
+	octave:5> ylabel('Retardo de Ida y Vuelta')
+	octave:6> title('Tiempo de Ida y Vuelta')
+	octave:7> print -dpng "traza3a.png"
